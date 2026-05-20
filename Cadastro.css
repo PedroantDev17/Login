@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Pricedown';
+    src: url(pricedown/Pricedown\ Bl.otf);
+}
+:root{
+    --font-principal: 'Pricedown';
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--font-principal), Arial, Helvetica, sans-serif;
+    background-color: darkblue;
+
+}
+h1{
+    margin-bottom: 25px;
+   font-size: 100px;
+  
+   text-shadow: 0 0 10px white;
+}
+div#cadastro{
+    display: grid;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#form-login{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-color: white;
+
+    padding: 20px;
+    border-radius: 10px;
+}
+
+fieldset > label, input{
+    margin: 10px;
+}
+
+fieldset > .enviar,.limpar{
+    background-color: transparent;
+    padding: 3.5px;
+    border-radius: 10px;
+   
+}
+
+fieldset > .enviar:hover , .limpar:hover{
+    background-color: blue;
+    color: white;
+    transition: 0.5s;
+}
