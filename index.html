@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,21 +13,26 @@
             
             <fieldset>
                 <legend>Cadastro</legend>
-                <p>
-                    <label for="inome">Nome:</label>
-                    <input type="text" name="nome" id="inome" min="5" max="50" autocomplete="name" required  autocomplete="off">
-                </p>
-        
-                <p>
-                    <label for="iemail">Email:</label>
-                    <input type="email" name="email" id="iemail"  min="256" max="256" autocomplete="email"  required>
-                </p>
-                <p>
-                    <label for="isenha">Senha:</label>
-                    <input type="password" name="senha" id="isenha" min="6" max="10" autocomplete="new-password" required>
-                </p>
-                <input type="submit" value="Enviar" class="enviar">
-                <input type="reset" value="Limpar" class="limpar">
+                <section>
+                    <p class="nome">
+                        <label for="inome">Nome:</label>
+                        <input type="text" name="nome" id="inome" min="5" max="50" autocomplete="name" required  autocomplete="off">
+                    </p>
+                    <p>
+                        <label for="iemail">Email:</label>
+                        <input type="email" name="email" id="iemail"  min="256" max="256" autocomplete="email"  required>
+                    </p>
+                    <p>
+                        <label for="isenha">Senha:</label>
+                        <input type="password" name="senha" id="isenha" min="6" max="10" autocomplete="new-password" required>
+                        
+                
+                    </p>
+                
+                    <input type="submit" value="Enviar" class="enviar">
+                    <input type="reset" value="Limpar" class="limpar">
+                </section>
+                
             </fieldset>
         </form>
     </div>
