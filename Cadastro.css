@@ -13,7 +13,7 @@
 }
 
 body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Pricedown',Arial, Helvetica, sans-serif;
     background-color: darkblue;
 
 }
@@ -39,8 +39,8 @@ div#cadastro{
     padding: 20px;
     border-radius: 10px;
 
-    width: 45vh;
-    height: 45vh;
+    width: 60vh;
+    height: 56vh;
 }
 fieldset{
     height: 100%;
