@@ -14,14 +14,14 @@
 
 body{
     font-family: 'Pricedown',Arial, Helvetica, sans-serif;
-    background-color: darkblue;
-
+    background-image: linear-gradient(to top,#000000);
 }
 h1{
     margin-bottom: 25px;
    font-size: 100px;
+   color: #F29F05;
   
-   text-shadow: 0 0 10px white;
+   text-shadow: 0 0 10px #F29F05;
 }
 div#cadastro{
     display: grid;
@@ -34,7 +34,7 @@ div#cadastro{
 
 #form-login{
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    background-color: white;
+    background-color:#A6610D;
 
     padding: 20px;
     border-radius: 10px;
@@ -45,6 +45,7 @@ div#cadastro{
 fieldset{
     height: 100%;
     width: 100%;
+    
 }
 section{
     display: flex;
@@ -57,7 +58,9 @@ section{
 p{ 
 height: 15%;
 font-size: 25px;
- 
+color:#F29F05;
+text-shadow:2px 1px 0px black;
+
 }
 .nome{
     margin-top: 20px;
