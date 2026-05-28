@@ -13,7 +13,7 @@
 }
 
 body{
-    font-family: var(--font-principal), Arial, Helvetica, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: darkblue;
 
 }
