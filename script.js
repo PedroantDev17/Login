@@ -13,7 +13,7 @@ function enviar() {
             } else {
                 window.confirm(`Confirma esses dados? Nome: ${nome} email: ${email}`)
                 
-                fetch('http://127.0.0.1:5000/cadastro', {
+                fetch('https://192.168.100.173:5000/cadastro', {
                     method:'POST',
                     headers: {
                         "Content-Type": 'application/json'
