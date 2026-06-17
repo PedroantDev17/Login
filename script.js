@@ -1,8 +1,8 @@
 function enviar() {
 
-            var campoNome = document.getElementById('inome');
-            var campoEmail = document.getElementById('iemail');
-            var campoSenha = document.getElementById('isenha');
+            let campoNome = document.getElementById('inome');
+            let campoEmail = document.getElementById('iemail');
+            let campoSenha = document.getElementById('isenha');
 
             var nome = campoNome.value.trim();
             var email = campoEmail.value.trim();
