@@ -8,9 +8,25 @@ function enviar() {
             var email = campoEmail.value.trim();
             var senha = campoSenha.value.trim();
 
-            if (nome.length === 0 || email.length === 0 || senha.length === 0) {
+            if (nome.length === 0 , email.length === 0 , senha.length < 6) {
                 window.alert('[Erro!] dados não inseridos')
             } else {
                 window.confirm(`Confirma esses dados? Nome: ${nome} email: ${email}`)
+                
+                fetch('http://127.0.0.1:5000/cadastro', {
+                    method:'POST',
+                    headers: {
+                        "Content-Type": 'application/json'
+                    },
+                    body: JSON.stringify({
+                        "name": nome, 
+                        "email" : email,
+                        "senha" : senha
+                    })
+                })
+
             }
         }
+
+        
+
