@@ -13,7 +13,7 @@ function enviar() {
             } else {
                 window.confirm(`Confirma esses dados? Nome: ${nome} email: ${email}`)
                 
-                fetch('http://192.168.100.173:5000/cadastro', {
+                fetch('https://commute-doormat-operator.ngrok-free.dev/', {
                     method:'POST',
                     headers: {
                         "Content-Type": 'application/json'
