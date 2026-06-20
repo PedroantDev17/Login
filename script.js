@@ -8,8 +8,10 @@ function enviar() {
             var email = campoEmail.value.trim();
             var senha = campoSenha.value.trim();
 
-            if (nome.length === 0 , email.length === 0 , senha.length < 6) {
-                window.alert('[Erro!] dados não inseridos')
+            if (nome.length === 0 || nome.length < 5 || nome.length > 50 , 
+                email.length === 0 || email.length < 256 || email.length > 256,
+                 senha.length < 6 || senha.length === 0 || senha.length > 10 || senha.length != Number ) {
+                window.alert('[Erro!] cadastro incorreto !!')
             } else {
                 window.confirm(`Confirma esses dados? Nome: ${nome} email: ${email}`)
                 
