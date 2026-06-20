@@ -8,12 +8,12 @@ function enviar() {
             var email = campoEmail.value.trim();
             var senha = campoSenha.value.trim();
 
-            if (nome.length === 0 || nome.length < 5 || nome.length > 50 , 
-                email.length === 0 || email.length < 256 || email.length > 256,
-                 senha.length < 6 || senha.length === 0 || senha.length > 10 || senha.length != Number ) {
+            if (nome.length === 0 || nome.length < 5 || nome.length > 50  || nome.length != Number, 
+                email.length === 0 || email.length < 10 || email.length > 256,
+                 senha.length < 6 || senha.length === 0 || senha.length > 10 || senha.length != undefined ) {
                 window.alert('[Erro!] cadastro incorreto !!')
             } else {
-                window.confirm(`Confirma esses dados? Nome: ${nome} email: ${email}`)
+                window.confirm(`Confirma esses dados? Nome: <strong>${nome}</strong> email: <strong>${email}</strong>`)
                 
                 fetch('https://commute-doormat-operator.ngrok-free.dev/cadastro', {
                     method:'POST',
