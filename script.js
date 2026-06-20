@@ -1,3 +1,17 @@
+function carregar() {
+    var agora = new Date()
+    var hora = agora.getHours()
+ 
+    if (hora >= 8 &&  hora < 12) {
+        document.body.style.background='#d8d50b'
+    } else if (hora >= 12 && hora < 18){
+        document.body.style.background='#36b2fa'
+    } else {
+        document.body.style.background='#041368'
+    }
+}
+
+
 function enviar() {
 
             let campoNome = document.getElementById('inome');
@@ -51,5 +65,6 @@ function enviar() {
                 }
             
             }
+
 
        
